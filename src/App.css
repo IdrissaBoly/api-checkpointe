@@ -1,38 +1,70 @@
-.App {
+.App{
+  background-color: azure;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 5rem;
+  color: white;
+  width: 100%;
+  
+}
+.user-list{
+width: 50%;
+
+}
+.user-list h2{
+  background: black;
+  padding: 12rem;
+  border: 1px solid navajowhite;
+  border-radius: 25rem;
+}
+.user-list ul{
+display: grid;
+grid-template-columns: 50% 50%;
+ 
+  color: rgb(26, 223, 214);
+  width: 80%;
+  list-style: none;
+  gap: 7rem;
+}
+
+
+.user-list ul li:hover{
+  background: black;
+  padding: 0.5rem;
+  border: 1px solid navajowhite;
+  border-radius: 25rem; ;
+transition: 0.5s;text-align: center;
+color: white;
+}
+
+
+.search-bar {
+  margin-bottom: 10px;
+  font-size: 30px;
+  
+}
+
+.search-bar input {
+  width: 40rem;
+  height:10rem ;
+  padding-right: 2px;
+  font-size: 50px;
+  
+  border-radius:25rem;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+.search-bar button {
+  
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+  padding: 5px ;
+  width: 40rem;
+  height:10rem ;
+  font-size: 50px;
+  cursor: pointer;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.search-bar button:hover{
+  background-color: green;
 }
